@@ -82,13 +82,15 @@ logical operators  ==
 
 
 function sumValues() {
-    let num1 = document.getElementById("numSum1").value
-    let num2 = document.getElementById("numSum2").value
+    let num1 = Number(document.getElementById("numSum1").value)
+    let num2 = Number(document.getElementById("numSum2").value)
     let calcSum = num1 + num2;
     console.log(calcSum)
 
     if (num1 == num2) {
-        calcSum * 5
+        calcSum *= 5
+        console.log(calcSum)
     }
+    
     document.getElementById("resultSum").innerHTML = calcSum;
 }
